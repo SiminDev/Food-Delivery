@@ -5,6 +5,8 @@ import Sidebar from "../../Components/sidebar";
 import Header from "./header";
 import Category from "./category";
 import Products from "./products";
+import DebitCard from "./debitCard";
+import OrderSummary from "./orderSummary";
 
 function Home() {
   return (
@@ -15,7 +17,10 @@ function Home() {
         <Category />
         <Products />
       </Content>
-      <Sidebar></Sidebar>
+      <Sidebar>
+        <DebitCard />
+        <OrderSummary />
+      </Sidebar>
     </>
   );
 }

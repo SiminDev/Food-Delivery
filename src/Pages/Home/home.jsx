@@ -1,7 +1,7 @@
 import React from "react";
-import Navigation from "../navigation";
-import Content from "../content";
-import Sidebar from "../sidebar";
+import Navigation from "../../Components/navigation";
+import Content from "../../Components/content";
+import Sidebar from "../../Components/sidebar";
 
 function Home() {
   return (

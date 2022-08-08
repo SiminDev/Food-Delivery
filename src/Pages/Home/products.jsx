@@ -1,7 +1,15 @@
 import React from "react";
 import PlusIcon from "../../Components/IconComponents/PlusIcon";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../Features/cartSlice";
 
 function Products() {
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (product) => {
+    dispatch(addToCart(product));
+  };
+
   const productsList = [
     {
       id: 1,
@@ -43,7 +51,10 @@ function Products() {
             <span className="text-primary text-xs mr-1 font-medium">$</span>
             {item.price}
           </p>
-          <button className="w-8 h-8 rounded-full bg-primary absolute bottom-5 right-5 flex justify-center items-center">
+          <button
+            onClick={() => handleAddToCart(item)}
+            className="w-8 h-8 rounded-full bg-primary absolute bottom-5 right-5 flex justify-center items-center"
+          >
             <PlusIcon className={"w-7 h-7 stroke-white"} />
           </button>
         </div>

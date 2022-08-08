@@ -9,8 +9,21 @@ const initialState = {
 export const cartSlice = createSlice({
   name: "cart",
   initialState,
-  reducers: {},
+  reducers: {
+    addToCart(state, action) {
+      const existingIndex = state.cartItems.findIndex(
+        (item) => item.id === action.payload.id
+      );
+      if (existingIndex >= 0) {
+        state.cartItems[existingIndex].quantity += 1;
+        state.cartTotalQuantity += 1;
+      } else {
+        const tempProduct = { ...action.payload, quantity: 1 };
+        state.cartItems.push(tempProduct);
+      }
+    },
+  },
 });
 
-export const {} = cartSlice.actions;
+export const { addToCart } = cartSlice.actions;
 export default cartSlice.reducer;

@@ -7,7 +7,7 @@ function Header() {
       <div className="w-full h-40 rounded-2xl relative bg-secondary-200 mb-12">
         <div className="w-full h-full rounded-2xl relative overflow-hidden">
           <div className="absolute top-6 left-10 font-body">
-            <p className="mb-2 text-secondary-600">Hello Simin,</p>
+            <p className="mb-2 text-secondary-600">Hello John,</p>
             <p className="text-sm font-light text-secondary-500">
               Get free delivery every $20 purchase 🎉
             </p>

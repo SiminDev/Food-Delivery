@@ -40,7 +40,7 @@ function CardInfo() {
         </label>
         <input
           className="w-full py-2 px-4 rounded-md bg-secondary-400 text-sm text-secondary-600 focus:outline-none"
-          value="Simin Rahmani"
+          value="John Doe"
         />
       </div>
       <div>

@@ -5,6 +5,7 @@ import {
   decreseCart,
   addToCart,
   removeFromCart,
+  getTotal,
 } from "../../Features/cartSlice";
 import TrashIcon from "../../Components/IconComponents/TrashIcon";
 import PlusIcon from "../../Components/IconComponents/PlusIcon";
@@ -29,6 +30,10 @@ export default OrderList;
 function ListItems() {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getTotal());
+  }, [cart]);
 
   const handleDecrese = (cartItem) => {
     dispatch(decreseCart(cartItem));

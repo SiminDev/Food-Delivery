@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Food-Delivery/static/css/main.a5408c64.css",
+    "main.js": "/Food-Delivery/static/js/main.0e0578f1.js",
+    "static/js/787.b7c9c4a7.chunk.js": "/Food-Delivery/static/js/787.b7c9c4a7.chunk.js",
+    "static/media/1.png": "/Food-Delivery/static/media/1.e4426caa41c7f8c45b3e.png",
+    "static/media/3.png": "/Food-Delivery/static/media/3.e0e8f3be129b262d5556.png",
+    "static/media/2.png": "/Food-Delivery/static/media/2.3a1ec947942aafc26a47.png",
+    "static/media/delivery.svg": "/Food-Delivery/static/media/delivery.4d999c8c1f3ef68bc9da41f638c52e58.svg",
+    "static/media/VisaCard.svg": "/Food-Delivery/static/media/VisaCard.5f9fb49200f698ab7a5bc4bc50ce830f.svg",
+    "static/media/Paypal.svg": "/Food-Delivery/static/media/Paypal.1fd03b94e46265821acbeb1a5bb295ae.svg",
+    "static/media/MasterCard.svg": "/Food-Delivery/static/media/MasterCard.22bea4c74044af01ec6595a21c7733e5.svg",
+    "static/media/Chip.svg": "/Food-Delivery/static/media/Chip.03fb5a3e1ab12ecb9c7bfbb44d142393.svg",
+    "static/media/VISA.svg": "/Food-Delivery/static/media/VISA.2fa384c2fdcc84193258a23d6b0e461d.svg",
+    "index.html": "/Food-Delivery/index.html",
+    "static/media/Cross.svg": "/Food-Delivery/static/media/Cross.c4f5d641a43f1c69be500de32c0d6bcd.svg",
+    "static/media/vector-bottom.svg": "/Food-Delivery/static/media/vector-bottom.0926d7e02a5388b879aed6a2d6d09a4c.svg",
+    "static/media/vector-top.svg": "/Food-Delivery/static/media/vector-top.8ecaf5ba2ffca0d239cb30b31bdd7dba.svg",
+    "static/media/cart_bottom_vector.svg": "/Food-Delivery/static/media/cart_bottom_vector.958e063cfc061f891942e06b8941640b.svg",
+    "static/media/cart_top_vector.svg": "/Food-Delivery/static/media/cart_top_vector.d20602b609d69c62e46c7235d1c33374.svg",
+    "main.a5408c64.css.map": "/Food-Delivery/static/css/main.a5408c64.css.map",
+    "main.0e0578f1.js.map": "/Food-Delivery/static/js/main.0e0578f1.js.map",
+    "787.b7c9c4a7.chunk.js.map": "/Food-Delivery/static/js/787.b7c9c4a7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5408c64.css",
+    "static/js/main.0e0578f1.js"
+  ]
+}

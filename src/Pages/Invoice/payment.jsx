@@ -109,7 +109,7 @@ function Total() {
         <p className="text-sm font-medium text-secondary-600">Total</p>
         <p className="font-number text-secondary-600">
           <span className="text-primary mr-1 font-medium text-xs">$</span>
-          {34.61}
+          {cartTotalAmount - shipping + tax}
         </p>
       </div>
       <button className="bg-primary px-7 py-2 rounded-full text-white text-sm w-full">

@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import { getTotal } from "../../Features/cartSlice";
 
 function OrderSummary() {
   return (
@@ -19,6 +20,10 @@ export default OrderSummary;
 function SummaryList() {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getTotal());
+  }, [cart]);
 
   return (
     <ul className="space-y-2.5">

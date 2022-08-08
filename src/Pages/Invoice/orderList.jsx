@@ -53,7 +53,7 @@ function ListItems() {
         className="w-full bg-white border border-slate-100 rounded-xl py-3 px-6 flex items-center justify-between"
       >
         <figure className="w-14 h-14 rounded-full mr-10">
-          <img src={require("../../Assets/Image/1.png")} />
+          <img src={require("../../Assets/Image/2.png")} />
         </figure>
         <p className="basis-2/5 text-slate-500 text-sm">{"Mushroom Pizza"}</p>
         <div className="flex items-center basis-1/5">

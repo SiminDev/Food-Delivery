@@ -1,8 +1,8 @@
 import React from "react";
 import { useEffect } from "react";
-import TrashIcon from "../IconComponents/TrashIcon";
-import PlusIcon from "../IconComponents/PlusIcon";
-import MinusIcon from "../IconComponents/MinusIcon";
+import TrashIcon from "../../Components/IconComponents/TrashIcon";
+import PlusIcon from "../../Components/IconComponents/PlusIcon";
+import MinusIcon from "../../Components/IconComponents/MinusIcon";
 
 function OrderList() {
   return (

@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 
 function OrderSummary() {
   return (
@@ -16,44 +17,32 @@ function OrderSummary() {
 export default OrderSummary;
 
 function SummaryList() {
+  const cart = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+
   return (
     <ul className="space-y-2.5">
-      <li
-        key={1}
-        className="w-full border border-slate-100 rounded-xl p-3 flex items-center "
-      >
-        <figure className="w-11 h-11 rounded-full mr-4">
-          <img src={require("../../Assets/Image/1.png")} />
-        </figure>
-        <caption className="flex grow flex-col items-start">
-          <p className="text-xs">{"Mixed Pizza"}</p>
-          <p className="text-xs font-light font-number flex">
-            <img src={require("../../Assets/Icons/Cross.svg").default} /> {2}
+      {cart.cartItems.map((item) => (
+        <li
+          key={item.id}
+          className="w-full border border-slate-100 rounded-xl p-3 flex items-center "
+        >
+          <figure className="w-11 h-11 rounded-full mr-4">
+            <img src={item.image} />
+          </figure>
+          <caption className="flex grow flex-col items-start">
+            <p className="text-xs">{item.name}</p>
+            <p className="text-xs font-light font-number flex">
+              <img src={require("../../Assets/Icons/Cross.svg").default} />{" "}
+              {item.quantity}
+            </p>
+          </caption>
+          <p className="text-sm font-number">
+            <span className="text-primary text-xs mr-1 font-medium">$</span>
+            {(item.quantity * item.price).toFixed(2)}
           </p>
-        </caption>
-        <p className="text-sm font-number">
-          <span className="text-primary text-xs mr-1 font-medium">$</span>
-          {(2 * 13.59).toFixed(2)}
-        </p>
-      </li>
-      <li
-        key={2}
-        className="w-full border border-slate-100 rounded-xl p-3 flex items-center "
-      >
-        <figure className="w-11 h-11 rounded-full mr-4">
-          <img src={require("../../Assets/Image/2.png")} />
-        </figure>
-        <caption className="flex grow flex-col items-start">
-          <p className="text-xs">{"Mushroom Pizza"}</p>
-          <p className="text-xs font-light font-number flex">
-            <img src={require("../../Assets/Icons/Cross.svg").default} /> {1}
-          </p>
-        </caption>
-        <p className="text-sm font-number">
-          <span className="text-primary text-xs mr-1 font-medium">$</span>
-          {(1 * 10.43).toFixed(2)}
-        </p>
-      </li>
+        </li>
+      ))}
     </ul>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 function Payment() {
   return (
@@ -75,6 +76,10 @@ function CardInfo() {
 }
 
 function Total() {
+  const { cartTotalAmount } = useSelector((state) => state.cart);
+  const shipping = Math.round((cartTotalAmount * 10) / 100);
+  const tax = Math.round((cartTotalAmount * 4) / 100);
+
   return (
     <div>
       <div className="space-y-2 border-dashed border-b border-secondary-400 mb-3 pb-3">
@@ -82,21 +87,21 @@ function Total() {
           <p className="text-xs text-secondary-500 ">Subtotal</p>
           <p className="font-number text-xs text-secondary-500">
             <span className="text-primary mr-1 text-xxs">$</span>
-            {37.61}
+            {cartTotalAmount}
           </p>
         </div>
         <div className="flex justify-between">
           <p className="text-xs text-secondary-500 ">Shipping</p>
           <p className="font-number text-xs text-secondary-500">
             <span className="text-primary mr-1 text-xxs">$</span>
-            {6}
+            {shipping}
           </p>
         </div>
         <div className="flex justify-between">
           <p className="text-xs text-secondary-500 ">tax</p>
           <p className="font-number text-xs text-secondary-500">
             <span className="text-primary mr-1 text-xxs">$</span>
-            {3}
+            {tax}
           </p>
         </div>
       </div>

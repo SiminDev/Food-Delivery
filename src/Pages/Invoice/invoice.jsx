@@ -3,6 +3,7 @@ import Navigation from "../../Components/navigation";
 import Content from "../../Components/content";
 import Sidebar from "../../Components/sidebar";
 import OrderList from "./orderList";
+import Payment from "./payment";
 
 function Invoice() {
   return (
@@ -11,7 +12,9 @@ function Invoice() {
       <Content>
         <OrderList />
       </Content>
-      <Sidebar></Sidebar>
+      <Sidebar>
+        <Payment />
+      </Sidebar>
     </>
   );
 }

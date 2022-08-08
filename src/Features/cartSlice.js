@@ -58,7 +58,7 @@ export const cartSlice = createSlice({
           cartQuantity: 0,
         }
       );
-      total = parseFloat(total.toFixed(2));
+      total = parseFloat(total).toFixed(2);
       state.cartTotalQuantity = cartQuantity;
       state.cartTotalAmount = total;
     },

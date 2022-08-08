@@ -12,7 +12,7 @@ function Navigation() {
       <ul className="w-full flex flex-col items-center pt-6">
         <li className="w-full flex justify-center py-4 md:py-6">
           <NavLink
-            to="/"
+            to="/Food-Delivery"
             className={({ isActive }) =>
               isActive
                 ? "w-11 h-11 rounded-full flex justify-center items-center bg-primary shadow-lg cursor-pointer"

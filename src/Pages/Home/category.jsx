@@ -20,7 +20,7 @@ function Category() {
             <span className="w-12 h-12 bg-white rounded-full block flex justify-center items-center text-2xl">
               🍕
             </span>
-            <p className="text-xs font-light text-white">pizza</p>
+            <p className="text-xs font-light text-white">Pizza</p>
           </li>
           {categoryList.map((item) => (
             <li

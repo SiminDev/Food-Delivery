@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App flex flex-row flex-wrap w-screen min-h-screen overflow-hidden	 sm:flex-nowrap md:h-screen ">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Food-Delivery" element={<Home />} />
         <Route path="/invoice" element={<Invoice />} />
       </Routes>
     </div>

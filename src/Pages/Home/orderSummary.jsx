@@ -48,16 +48,22 @@ function SummaryList() {
 }
 
 function Total() {
+  let navigate = useNavigate();
+  const cart = useSelector((state) => state.cart);
+
   return (
     <div>
       <div className="flex justify-between mb-4">
         <p className="text-sm font-medium">Total</p>
         <p className="font-number">
           <span className="text-primary mr-1 font-medium text-xs">$</span>
-          {37.61}
+          {cart.cartTotalAmount}
         </p>
       </div>
-      <button className="bg-primary px-7 py-2 rounded-full text-white text-sm w-full">
+      <button
+        onClick={() => navigate("/invoice")}
+        className="bg-primary px-7 py-2 rounded-full text-white text-sm w-full"
+      >
         Checkout
       </button>
     </div>

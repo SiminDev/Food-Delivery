@@ -1,7 +1,11 @@
 import React from "react";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { decreseCart, addToCart } from "../../Features/cartSlice";
+import {
+  decreseCart,
+  addToCart,
+  removeFromCart,
+} from "../../Features/cartSlice";
 import TrashIcon from "../../Components/IconComponents/TrashIcon";
 import PlusIcon from "../../Components/IconComponents/PlusIcon";
 import MinusIcon from "../../Components/IconComponents/MinusIcon";
@@ -33,6 +37,11 @@ function ListItems() {
   const handleIncrese = (cartItem) => {
     dispatch(addToCart(cartItem));
   };
+
+  const handleRemoveFromCart = (cartItem) => {
+    dispatch(removeFromCart(cartItem));
+  };
+
   return (
     <ul className="space-y-2.5">
       {cart.cartItems.map((item) => (
@@ -61,7 +70,7 @@ function ListItems() {
             <span className="text-primary text-xs mr-1 font-medium">$</span>
             {(item.quantity * item.price).toFixed(2)}
           </p>
-          <button>
+          <button onClick={() => handleRemoveFromCart(item)}>
             <TrashIcon className={"w-5 h-5 cursor-pointer"} />
           </button>
         </li>

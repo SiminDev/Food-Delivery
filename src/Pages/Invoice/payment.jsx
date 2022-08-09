@@ -77,7 +77,7 @@ function CardInfo() {
 
 function Total() {
   const { cartTotalAmount } = useSelector((state) => state.cart);
-  const shipping = 3;
+  const shipping = Math.round((cartTotalAmount * 10) / 100);
   const tax = Math.round((cartTotalAmount * 4) / 100);
 
   return (
@@ -109,7 +109,7 @@ function Total() {
         <p className="text-sm font-medium text-secondary-600">Total</p>
         <p className="font-number text-secondary-600">
           <span className="text-primary mr-1 font-medium text-xs">$</span>
-          {cartTotalAmount + shipping + tax}
+          {parseFloat(cartTotalAmount) + shipping + tax}
         </p>
       </div>
       <button className="bg-primary px-7 py-2 rounded-full text-white text-sm w-full">

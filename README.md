@@ -10,6 +10,10 @@ My goal in this project was to show my design skills.
 
 I designed the UI myself using [Figma](https://figma.com/) and inspired by some Dribbble designs.
 
+
+![ScreenShot](https://user-images.githubusercontent.com/27372909/183748631-84d1ef3c-f7a7-49aa-84ee-590497d32928.png)
+
+
 It's my first experience with [Tailwind](https://tailwindcss.com/) and styling is done entirely using it.
 
 ### To Do

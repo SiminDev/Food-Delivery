@@ -1,10 +1,10 @@
-# Food Delivery App
+# 🍔 Food Delivery App
 
 This demo project illustrates the fusion of [Tailwind](https://tailwindcss.com/) CSS and [Redux-Toolkit](https://redux-toolkit.js.org/) in the context of a food delivery application. It offers a simple yet comprehensive example of how to build an appealing UI while effectively managing the application's state.
 
 ## Demo
 
-Check out live demo here 👇.
+Check out live demo here 👇.\
 https://simindev.github.io/Food-Delivery/
 
 ## UI Design
